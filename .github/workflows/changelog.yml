@@ -1,6 +1,6 @@
 name: Changelog
 on:
-  release:
+  push:
     types:
       - created
 jobs:
