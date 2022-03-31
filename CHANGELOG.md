@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.2.0...HEAD)
+
+**Fixed bugs:**
+
+- Fix bug github Action [\#1](https://github.com/arnaudbirk/test-changelog/issues/1)
+
+## [v0.2.0](https://github.com/arnaudbirk/test-changelog/tree/v0.2.0) (2022-03-31)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.1.0...v0.2.0)
+
 ## [v0.1.0](https://github.com/arnaudbirk/test-changelog/tree/v0.1.0) (2022-03-31)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/11aef021144044c681cd043267d933eb33499d7f...v0.1.0)
