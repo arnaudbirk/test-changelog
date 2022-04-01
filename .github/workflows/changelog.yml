@@ -6,23 +6,19 @@ on:
     branches: '*'
 
 jobs:
-  generate_changelog:
-    runs-on: ubuntu-latest
-    name: Generate changelog for master branch
+  changelog:
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v1
-
-      - name: Generate changelog
-        uses: charmixer/auto-changelog-action@v1
+      - name: "Generate release changelog"
+        uses: heinrichreimer/github-changelog-generator-action@v2.3
         with:
-          token: ${{ secrets.YOUR_GITHUB_TOKEN or GITHUB_TOKEN }}
-
-      - name: Commit files
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: "Push changelog"
         env:
           CI_USER: ${{ secrets.GH_USER }}
           CI_EMAIL: ${{ secrets.GH_MAIL }}
         run: |
           git config --local user.email "$CI_EMAIL"
           git config --local user.name "$CI_USER"
-          git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && echo "push=true" >> $GITHUB_ENV || echo "No changes to CHANGELOG.md"
-
+          git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md'
