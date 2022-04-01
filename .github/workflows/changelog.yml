@@ -20,7 +20,7 @@ jobs:
           CI_USER: ${{ secrets.GH_USER }}
           CI_EMAIL: ${{ secrets.GH_MAIL }}
         run: |
-          echo ${{ GITHUB_WORKSPACE }}
+          echo ${{ github.workspace }}
           git config --local user.email "$CI_EMAIL"
           git config --local user.name "$CI_USER"
           git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md'
