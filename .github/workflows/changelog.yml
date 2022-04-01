@@ -9,7 +9,7 @@ jobs:
   changelog:
     runs-on: ubuntu-20.04
     steps:
-      - name: "✏️ Generate release changelog"
+      - name: "Generate release changelog"
         uses: heinrichreimer/github-changelog-generator-action@v2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -17,7 +17,6 @@ jobs:
 	run: |
 	  git config --global user.name ${{ secrets.GH_USER }}
 	  git config --global user.email "${{ secrets.GH_MAIL }}"
-	  git remote add gh-token "https://${{ secrets.GH_TOKEN}}@github.com/:user/:repo.git"
-	  git fetch gh-token && git fetch gh-token gh-pages:gh-pages
-	  python -m mkdocs gh-deploy -v --clean --remote-name gh-token
-	  git push gh-token gh-pages
+    git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md'
+    echo ${{ secrets.GH_USER }}
+    echo ${{ secrets.GH_MAIL }}
