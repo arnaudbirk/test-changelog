@@ -1,4 +1,3 @@
 # test-changelog
 test-changelog
-
-blah blah blah
+je fixe l'issue 1
