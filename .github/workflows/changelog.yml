@@ -15,15 +15,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           output: CHANGELOG.md
-      - name: echo
+      - name: "Push changelog"
+        env:
+          CI_USER: ${{ secrets.GH_USER }}
+          CI_EMAIL: ${{ secrets.GH_MAIL }}
         run: |
-          ls -lah $GITHUB_WORKSPACE
-      # - name: "Push changelog"
-      #   env:
-      #     CI_USER: ${{ secrets.GH_USER }}
-      #     CI_EMAIL: ${{ secrets.GH_MAIL }}
-      #   run: |
-      #     echo ${{ github.workspace }}
+          echo $CI_USER
+          echo $CI_EMAIL
       #     git config --local user.email "$CI_EMAIL"
       #     git config --local user.name "$CI_USER"
       #     git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md'
