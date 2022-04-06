@@ -4,10 +4,10 @@ on: push
 jobs:
   build:
     name: "✏️ Changelog generation"
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: "📥 Check-out"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: "✏️ Generate full changelog"
         id: generate-full-changelog
         uses: ./
