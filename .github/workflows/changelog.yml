@@ -15,6 +15,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           output: CHANGELOG.md
+      - name: echo
         run: |
           echo $GITHUB_WORKSPACE
       # - name: "Push changelog"
