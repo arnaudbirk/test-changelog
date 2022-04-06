@@ -17,7 +17,7 @@ jobs:
           output: CHANGELOG.md
       - name: echo
         run: |
-          ls -lh $GITHUB_WORKSPACE
+          ls -lah $GITHUB_WORKSPACE
       # - name: "Push changelog"
       #   env:
       #     CI_USER: ${{ secrets.GH_USER }}
