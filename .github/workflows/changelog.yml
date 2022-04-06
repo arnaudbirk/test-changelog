@@ -14,17 +14,25 @@ jobs:
         uses: heinrichreimer/github-changelog-generator-action@v2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          output: CHANGELOG.md
-      # - name: "Push changelog"
-      #   env:
-      #     CI_USER: ${{ secrets.GH_USER }}
-      #     CI_EMAIL: ${{ secrets.GH_MAIL }}
-      #   run: |
-      #     git config --local user.email "$CI_EMAIL"
-      #     git config --local user.name "$CI_USER"
-      #     git add $GITHUB_WORKSPACE/CHANGELOG.md
-      #     git commit -am 'Updated CHANGELOG.md'
-      #     git push
+          headerLabel: "# 📑 Changelog"
+          breakingLabel: '### 💥 Breaking'
+          enhancementLabel: '### 🚀 Enhancements'
+          bugsLabel: '### 🐛 Bug fixes'
+          deprecatedLabel: '### ⚠️ Deprecations'
+          removedLabel: '### 🔥 Removals'
+          securityLabel: '### 🛡️ Security'
+          issuesLabel: '### 📁 Other issues'
+          prLabel: '### 📁 Other pull requests'
+          addSections: '{"documentation":{"prefix":"### 📖 Documentation","labels":["documentation"]},"tests":{"prefix":"### ✅ Testing","labels":["tests"]}}'
+          issues: true
+          issuesWoLabels: true
+          pullRequests: true
+          prWoLabels: true
+          author: true
+          unreleased: true
+          compareLink: true
+          stripGeneratorNotice: true
+          verbose: true
       - name: "🖨️ Print changelog to console"
         run: cat CHANGELOG.md
       - name: "📤 Upload changelog"
