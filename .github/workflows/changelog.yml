@@ -28,4 +28,4 @@ jobs:
           # git status
           git add $GITHUB_WORKSPACE/CHANGELOG.md
           git commit -am 'Updated CHANGELOG.md'
-          # git status
+          git push
