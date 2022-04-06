@@ -22,6 +22,6 @@ jobs:
         run: |
           echo $CI_USER
           echo $CI_EMAIL
-      #     git config --local user.email "$CI_EMAIL"
-      #     git config --local user.name "$CI_USER"
-      #     git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md'
+          git config --local user.email "$CI_EMAIL"
+          git config --local user.name "$CI_USER"
+          git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md && git push'
