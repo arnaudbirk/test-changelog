@@ -24,5 +24,6 @@ jobs:
           echo $CI_EMAIL
           git config --local user.email "$CI_EMAIL"
           git config --local user.name "$CI_USER"
-          # git add CHANGELOG.md && git commit -am 'Updated CHANGELOG.md'
-          git branch
+          git status
+          git add CHANGELOG.md && git commit -am 'Updated CHANGELOG.md'
+          git status
