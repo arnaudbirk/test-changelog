@@ -22,8 +22,9 @@ jobs:
         run: |
           echo $CI_USER
           echo $CI_EMAIL
-          git config --local user.email "$CI_EMAIL"
-          git config --local user.name "$CI_USER"
-          git status
-          git add $GITHUB_WORKSPACE/CHANGELOG.md && git commit -am 'Updated CHANGELOG.md'
-          git status
+          echo $GITHUB_WORKSPACE
+          # git config --local user.email "$CI_EMAIL"
+          # git config --local user.name "$CI_USER"
+          # git status
+          # git add $GITHUB_WORKSPACE/CHANGELOG.md && git commit -am 'Updated CHANGELOG.md'
+          # git status
