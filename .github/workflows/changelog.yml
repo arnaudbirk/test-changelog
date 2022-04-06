@@ -22,7 +22,7 @@ jobs:
         run: |
           echo $CI_USER
           echo $CI_EMAIL
-          echo $GITHUB_WORKSPACE
+          ls -lah $GITHUB_WORKSPACE
           # git config --local user.email "$CI_EMAIL"
           # git config --local user.name "$CI_USER"
           # git status
