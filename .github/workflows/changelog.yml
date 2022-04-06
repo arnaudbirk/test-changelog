@@ -20,12 +20,8 @@ jobs:
           CI_USER: ${{ secrets.GH_USER }}
           CI_EMAIL: ${{ secrets.GH_MAIL }}
         run: |
-          echo $CI_USER
-          echo $CI_EMAIL
-          ls -lah $GITHUB_WORKSPACE
           git config --local user.email "$CI_EMAIL"
           git config --local user.name "$CI_USER"
-          # git status
           git add $GITHUB_WORKSPACE/CHANGELOG.md
           git commit -am 'Updated CHANGELOG.md'
           git push
