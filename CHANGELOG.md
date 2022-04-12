@@ -10,11 +10,15 @@
 
 ## [v0.8.0](https://github.com/arnaudbirk/test-changelog/tree/v0.8.0) (2022-04-06)
 
-[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.7.0...v0.8.0)
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.7.1...v0.8.0)
 
 ### 🚀 Enhancements
 
 - add my new feature [\#7](https://github.com/arnaudbirk/test-changelog/pull/7) ([arnaudbirk](https://github.com/arnaudbirk))
+
+## [v0.7.1](https://github.com/arnaudbirk/test-changelog/tree/v0.7.1) (2022-04-06)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.7.0...v0.7.1)
 
 ## [v0.7.0](https://github.com/arnaudbirk/test-changelog/tree/v0.7.0) (2022-04-06)
 
