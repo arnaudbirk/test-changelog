@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
 
-[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.20.0...HEAD)
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.21.0...HEAD)
+
+### 🐛 Bug fixes
+
+- new workflow [\#25](https://github.com/arnaudbirk/test-changelog/pull/25) ([arnaudbirk](https://github.com/arnaudbirk))
+
+## [v0.21.0](https://github.com/arnaudbirk/test-changelog/tree/v0.21.0) (2022-04-13)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.20.0...v0.21.0)
 
 ### 🐛 Bug fixes
 
