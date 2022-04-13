@@ -40,12 +40,12 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git commit -am "Update Changelog"
         git push
+        git pull
     - name: "✏️ Bump version and push tag"
       uses: anothrNick/github-tag-action@1.36.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
-    - uses: actions/checkout@v3
     - name: "✏️ Generate release changelog"
       id: generate-release-changelog
       uses: heinrichreimer/github-changelog-generator-action@v2.3
