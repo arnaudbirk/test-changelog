@@ -1,8 +1,8 @@
 # 📑 Changelog
 
-## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
+## [v0.9.0](https://github.com/arnaudbirk/test-changelog/tree/v0.9.0) (2022-04-13)
 
-[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.8.0...HEAD)
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.8.0...v0.9.0)
 
 ### 🚀 Enhancements
 
