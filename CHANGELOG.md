@@ -1,5 +1,13 @@
 # 📑 Changelog
 
+## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.9.0...HEAD)
+
+### 📁 Other pull requests
+
+- add autotag [\#8](https://github.com/arnaudbirk/test-changelog/pull/8) ([arnaudbirk](https://github.com/arnaudbirk))
+
 ## [v0.9.0](https://github.com/arnaudbirk/test-changelog/tree/v0.9.0) (2022-04-13)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.8.0...v0.9.0)
