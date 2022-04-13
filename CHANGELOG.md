@@ -1,5 +1,13 @@
 # 📑 Changelog
 
+## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.18.0...HEAD)
+
+### 🐛 Bug fixes
+
+- new workflow [\#22](https://github.com/arnaudbirk/test-changelog/pull/22) ([arnaudbirk](https://github.com/arnaudbirk))
+
 ## [v0.18.0](https://github.com/arnaudbirk/test-changelog/tree/v0.18.0) (2022-04-13)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.17.0...v0.18.0)
