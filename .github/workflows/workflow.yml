@@ -52,6 +52,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
     - name: "✏️ Generate release changelog"
       id: generate-release-changelog
       uses: heinrichreimer/github-changelog-generator-action@v2.3
