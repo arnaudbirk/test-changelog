@@ -1,5 +1,24 @@
 # 📑 Changelog
 
+## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.12.0...HEAD)
+
+### 📁 Other pull requests
+
+- new workflow [\#15](https://github.com/arnaudbirk/test-changelog/pull/15) ([arnaudbirk](https://github.com/arnaudbirk))
+- new workflow [\#14](https://github.com/arnaudbirk/test-changelog/pull/14) ([arnaudbirk](https://github.com/arnaudbirk))
+- 11 je teste mon new workflow [\#13](https://github.com/arnaudbirk/test-changelog/pull/13) ([arnaudbirk](https://github.com/arnaudbirk))
+
+## [v0.12.0](https://github.com/arnaudbirk/test-changelog/tree/v0.12.0) (2022-04-13)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.11.0...v0.12.0)
+
+### 🐛 Bug fixes
+
+- Je teste mon new workflow [\#11](https://github.com/arnaudbirk/test-changelog/issues/11)
+- new workflow [\#12](https://github.com/arnaudbirk/test-changelog/pull/12) ([arnaudbirk](https://github.com/arnaudbirk))
+
 ## [v0.11.0](https://github.com/arnaudbirk/test-changelog/tree/v0.11.0) (2022-04-13)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.10.0...v0.11.0)
