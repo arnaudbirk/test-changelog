@@ -15,6 +15,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
   changelog:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
@@ -47,6 +50,8 @@ jobs:
         git commit -am "Update Changelog"
         git push
   release:
+    runs-on: ubuntu-latest
+    steps:
     - name: "✏️ Generate release changelog"
       id: generate-release-changelog
       uses: heinrichreimer/github-changelog-generator-action@v2.3
