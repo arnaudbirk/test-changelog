@@ -31,16 +31,11 @@ jobs:
           verbose: true
       - name: "🖨️ Print changelog to console"
         run: cat CHANGELOG.md
-      # - name: "📤 Upload changelog"
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: "Changelog"
-      #     path: CHANGELOG.md
-      - name: Commit files
+      - name: "📤 Commit files"
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -am "Update CHnagelog"
+          git commit -am "Update Changelog"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
