@@ -9,11 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: "✏️ Bump version and push tag"
-      uses: anothrNick/github-tag-action@1.36.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: true
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
@@ -49,6 +44,11 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
+    - name: "✏️ Bump version and push tag"
+      uses: anothrNick/github-tag-action@1.36.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WITH_V: true
     - name: "✏️ Generate release changelog"
       id: generate-release-changelog
       uses: heinrichreimer/github-changelog-generator-action@v2.3
