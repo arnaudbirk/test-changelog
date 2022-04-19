@@ -68,6 +68,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        tag_name: ${{steps.tagging.outputs.new_tag}}
+        release_name: Release ${{steps.tagging.outputs.new_tag}}
         body: ${{ steps.generate-release-changelog.outputs.changelog }}
