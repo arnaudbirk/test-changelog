@@ -1,5 +1,17 @@
 # 📑 Changelog
 
+## [v0.37.0](https://github.com/arnaudbirk/test-changelog/tree/v0.37.0) (2022-04-19)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.36.0...v0.37.0)
+
+### 📁 Other issues
+
+- issue with \#major [\#43](https://github.com/arnaudbirk/test-changelog/issues/43)
+
+### 📁 Other pull requests
+
+- je test \#major [\#44](https://github.com/arnaudbirk/test-changelog/pull/44) ([arnaudbirk](https://github.com/arnaudbirk))
+
 ## [v0.36.0](https://github.com/arnaudbirk/test-changelog/tree/v0.36.0) (2022-04-19)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.35.0...v0.36.0)
