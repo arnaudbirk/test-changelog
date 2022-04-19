@@ -1,8 +1,40 @@
 # 📑 Changelog
 
-## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
+## [v0.28.0](https://github.com/arnaudbirk/test-changelog/tree/v0.28.0) (2022-04-19)
 
-[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.23.0...HEAD)
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.27.0...v0.28.0)
+
+### 📁 Other pull requests
+
+- new workflow [\#31](https://github.com/arnaudbirk/test-changelog/pull/31) ([arnaudbirk](https://github.com/arnaudbirk))
+
+## [v0.27.0](https://github.com/arnaudbirk/test-changelog/tree/v0.27.0) (2022-04-19)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.26.0...v0.27.0)
+
+### 📁 Other pull requests
+
+- new workflow [\#30](https://github.com/arnaudbirk/test-changelog/pull/30) ([arnaudbirk](https://github.com/arnaudbirk))
+
+## [v0.26.0](https://github.com/arnaudbirk/test-changelog/tree/v0.26.0) (2022-04-19)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.25.0...v0.26.0)
+
+### 📁 Other pull requests
+
+- new workflow [\#29](https://github.com/arnaudbirk/test-changelog/pull/29) ([arnaudbirk](https://github.com/arnaudbirk))
+
+## [v0.25.0](https://github.com/arnaudbirk/test-changelog/tree/v0.25.0) (2022-04-19)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.24.0...v0.25.0)
+
+### 📁 Other pull requests
+
+- new workflow [\#28](https://github.com/arnaudbirk/test-changelog/pull/28) ([arnaudbirk](https://github.com/arnaudbirk))
+
+## [v0.24.0](https://github.com/arnaudbirk/test-changelog/tree/v0.24.0) (2022-04-13)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.23.0...v0.24.0)
 
 ### 🐛 Bug fixes
 
