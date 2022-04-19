@@ -1,5 +1,13 @@
 # 📑 Changelog
 
+## [v0.29.0](https://github.com/arnaudbirk/test-changelog/tree/v0.29.0) (2022-04-19)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.28.0...v0.29.0)
+
+### 📁 Other pull requests
+
+- new workflow [\#32](https://github.com/arnaudbirk/test-changelog/pull/32) ([arnaudbirk](https://github.com/arnaudbirk))
+
 ## [v0.28.0](https://github.com/arnaudbirk/test-changelog/tree/v0.28.0) (2022-04-19)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.27.0...v0.28.0)
