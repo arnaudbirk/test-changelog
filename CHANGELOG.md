@@ -6,6 +6,7 @@
 
 ### 📁 Other pull requests
 
+- new workflow [\#33](https://github.com/arnaudbirk/test-changelog/pull/33) ([arnaudbirk](https://github.com/arnaudbirk))
 - new workflow [\#32](https://github.com/arnaudbirk/test-changelog/pull/32) ([arnaudbirk](https://github.com/arnaudbirk))
 
 ## [v0.28.0](https://github.com/arnaudbirk/test-changelog/tree/v0.28.0) (2022-04-19)
