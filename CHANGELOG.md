@@ -1,16 +1,20 @@
 # 📑 Changelog
 
-## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
+## [v0.35.0](https://github.com/arnaudbirk/test-changelog/tree/v0.35.0) (2022-04-19)
 
-[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.34.0...HEAD)
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.34.0...v0.35.0)
 
-### 📁 Other issues
+### 📁 Other pull requests
 
-- test changement de version [\#39](https://github.com/arnaudbirk/test-changelog/issues/39)
+- je test \#major [\#41](https://github.com/arnaudbirk/test-changelog/pull/41) ([arnaudbirk](https://github.com/arnaudbirk))
 
 ## [v0.34.0](https://github.com/arnaudbirk/test-changelog/tree/v0.34.0) (2022-04-19)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.33.0...v0.34.0)
+
+### 📁 Other issues
+
+- test changement de version [\#39](https://github.com/arnaudbirk/test-changelog/issues/39)
 
 ### 📁 Other pull requests
 
