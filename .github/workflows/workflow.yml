@@ -48,6 +48,10 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git commit -am "Update Changelog"
         git push
+        git tag -d ${{steps.tagging.outputs.new_tag}}
+        git push origin :${{steps.tagging.outputs.new_tag}}
+        git tag ${{steps.tagging.outputs.new_tag}}
+        git push origin ${{steps.tagging.outputs.new_tag}}
     - name: "Update repo"
       run: |
         git fetch --prune --unshallow
