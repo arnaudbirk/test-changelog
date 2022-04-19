@@ -19,7 +19,7 @@ jobs:
       run: "echo ${{steps.tagging.outputs.new_tag}}"
     - name: "Update repo"
       run: |
-        git fetch --prune
+        git fetch --prune --unshallow
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
