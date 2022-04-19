@@ -3,4 +3,4 @@ test-changelog
 
 Repo test for changelog
 
-c'est trop de la balle
+c'est trop de la bombe de balle
