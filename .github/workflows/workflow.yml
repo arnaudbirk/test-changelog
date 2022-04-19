@@ -17,6 +17,9 @@ jobs:
         WITH_V: true
     - name: "🖨️ Print new tag to console"
       run: "echo ${{steps.tagging.outputs.new_tag}}"
+    - name: "Update repo"
+      run: |
+        git fetch --prune
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
@@ -42,9 +45,6 @@ jobs:
         verbose: true
     - name: "🖨️ Print changelog to console"
       run: cat CHANGELOG.md
-    - name: "Update repo"
-      run: |
-        git fetch --prune --unshallow
     - name: "📤 Commit files"
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
