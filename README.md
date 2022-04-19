@@ -6,3 +6,5 @@ Repo test for changelog
 c'est trop de la bombe de balle
 
 youhou !!!
+
+hello
