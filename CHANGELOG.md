@@ -1,5 +1,21 @@
 # 📑 Changelog
 
+## [Unreleased](https://github.com/arnaudbirk/test-changelog/tree/HEAD)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.31.0...HEAD)
+
+### 🐛 Bug fixes
+
+- auto tagging test [\#35](https://github.com/arnaudbirk/test-changelog/issues/35)
+
+## [v0.31.0](https://github.com/arnaudbirk/test-changelog/tree/v0.31.0) (2022-04-19)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.30.0...v0.31.0)
+
+### 📁 Other pull requests
+
+- test [\#36](https://github.com/arnaudbirk/test-changelog/pull/36) ([arnaudbirk](https://github.com/arnaudbirk))
+
 ## [v0.30.0](https://github.com/arnaudbirk/test-changelog/tree/v0.30.0) (2022-04-19)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v0.29.0...v0.30.0)
