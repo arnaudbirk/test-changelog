@@ -9,6 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: "✏️ Bump version and push tag"
+      id: tagging
+      uses: anothrNick/github-tag-action@1.39.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WITH_V: true
+    - name: "🖨️ Print new tag to console"
+      run: "echo ${{steps.run_tests.outputs.*}}"
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
@@ -40,11 +48,6 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git commit -am "Update Changelog"
         git push
-    - name: "✏️ Bump version and push tag"
-      uses: anothrNick/github-tag-action@1.36.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: true
     - name: "Update repo"
       run: |
         git fetch --prune --unshallow
