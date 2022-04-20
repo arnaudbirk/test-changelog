@@ -55,7 +55,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "github-actions[bot]"
-        git commit -am "Update Changelog"
+        git commit -am "Update changelog and version"
         git push
         git tag -d ${{steps.tagging.outputs.new_tag}}
         git push origin :${{steps.tagging.outputs.new_tag}}
