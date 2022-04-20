@@ -6,7 +6,6 @@ on:
 
 jobs:
   tag:
-    if: github.event.base_ref != 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -21,6 +20,12 @@ jobs:
     - name: "Update repo"
       run: |
         git fetch --prune --unshallow
+    - uses: butlerlogic/action-autotag@1.0.0
+    - name: "Update Dockerfile"
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        strategy: docker
+        version: ${{steps.tagging.outputs.new_tag}}
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
@@ -50,7 +55,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "github-actions[bot]"
-        git commit -am "Update Changelog"
+        git commit -am "Update changelog and version"
         git push
         git tag -d ${{steps.tagging.outputs.new_tag}}
         git push origin :${{steps.tagging.outputs.new_tag}}
