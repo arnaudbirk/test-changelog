@@ -6,6 +6,7 @@ on:
 
 jobs:
   tag:
+    if: github.event.base_ref != 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -47,7 +48,7 @@ jobs:
       run: cat CHANGELOG.md
     - name: "📤 Commit files"
       run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.email "action@github.com"
         git config --local user.name "github-actions[bot]"
         git commit -am "Update Changelog"
         git push
