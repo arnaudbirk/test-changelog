@@ -21,7 +21,7 @@ jobs:
       run: |
         git fetch --prune --unshallow
     - name: "Update Dockerfile"
-      uses: butlerlogic/action-autotag@1.0.0
+      uses: butlerlogic/action-autotag@1.1.1
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         strategy: docker
