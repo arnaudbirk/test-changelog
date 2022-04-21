@@ -1,5 +1,13 @@
 # 📑 Changelog
 
+## [v1.6.0](https://github.com/arnaudbirk/test-changelog/tree/v1.6.0) (2022-04-21)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v1.5.0...v1.6.0)
+
+### 🚀 Enhancements
+
+- 48 je teste pour antoine [\#56](https://github.com/arnaudbirk/test-changelog/pull/56) ([arnaudbirk](https://github.com/arnaudbirk))
+
 ## [v1.5.0](https://github.com/arnaudbirk/test-changelog/tree/v1.5.0) (2022-04-21)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v1.4.0...v1.5.0)
