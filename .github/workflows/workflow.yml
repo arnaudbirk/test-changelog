@@ -23,6 +23,9 @@ jobs:
     - name: "Bump version Package.json"
       run: |
         npm version --git-tag-version=false ${{steps.tagging.outputs.new_tag}}
+    - name: "Bump version Dockerfile"
+      run: |
+        sed -i "s/LABEL version=\"${{steps.tagging.outputs.tag}}\"/LABEL version=\"${{steps.tagging.outputs.new_tag}}\"/g" "Dockerfile"
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
