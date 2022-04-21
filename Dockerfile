@@ -1,6 +1,6 @@
 FROM node:latest
 LABEL maintainer="arnaud.birk@ign.fr"
-LABEL version="v1.11.0"
+LABEL version="v1.15.0"
 
 ENV http_proxy=$http_proxy
 ENV https_proxy=$http_proxy
