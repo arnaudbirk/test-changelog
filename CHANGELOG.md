@@ -1,5 +1,13 @@
 # 📑 Changelog
 
+## [v1.7.0](https://github.com/arnaudbirk/test-changelog/tree/v1.7.0) (2022-04-21)
+
+[Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v1.6.0...v1.7.0)
+
+### 📁 Other pull requests
+
+- test [\#57](https://github.com/arnaudbirk/test-changelog/pull/57) ([arnaudbirk](https://github.com/arnaudbirk))
+
 ## [v1.6.0](https://github.com/arnaudbirk/test-changelog/tree/v1.6.0) (2022-04-21)
 
 [Full Changelog](https://github.com/arnaudbirk/test-changelog/compare/v1.5.0...v1.6.0)
