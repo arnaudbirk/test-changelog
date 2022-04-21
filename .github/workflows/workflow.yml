@@ -16,13 +16,18 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
     - name: "🖨️ Print new tag to console"
-      run: "echo ${{steps.tagging.outputs.new_tag}}"
+      run: |
+        echo ${{steps.tagging.outputs.tag}}
+        echo ${{steps.tagging.outputs.new_tag}}
     - name: "Update repo"
       run: |
         git fetch --prune --unshallow
     - name: "Bump version Package.json"
       run: |
         npm version --git-tag-version=false ${{steps.tagging.outputs.new_tag}}
+    - name: "Bump version Dockerfile"
+      run: |
+        sed -i "s/LABEL version=\"${{steps.tagging.outputs.tag}}\"/LABEL version=\"${{steps.tagging.outputs.new_tag}}\"/g" "Dockerfile"
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
