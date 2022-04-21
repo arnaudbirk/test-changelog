@@ -13,6 +13,7 @@ jobs:
       id: old_tag
       run: |
         echo "OLD_TAG=$(git tag --sort=-v:refname --format '%(refname:lstrip=2)' | head -n 1)" >> $GITHUB_ENV
+        git tag --sort=-v:refname --format '%(refname:lstrip=2)' | head -n 1
         echo ${{ env.OLD_TAG }}
         echo ::set-output name=old_tag::${{ env.OLD_TAG }}
     - name: "✏️ Bump version and push tag"
