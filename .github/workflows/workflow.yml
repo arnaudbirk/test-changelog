@@ -12,8 +12,7 @@ jobs:
     - name: "Get old tag"
       id: old_tag
       run: |
-        old_tag = git tag --sort=-v:refname --format '%(refname:lstrip=2)' | head -n 1
-        echo '::set-output name=old_tag::$old_tag'
+        echo '::set-output name=old_tag::git tag --sort=-v:refname --format '%(refname:lstrip=2)' | head -n 1'
     - name: "✏️ Bump version and push tag"
       id: tagging
       uses: anothrNick/github-tag-action@1.36.0
