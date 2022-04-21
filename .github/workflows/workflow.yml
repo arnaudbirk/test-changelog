@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: "Get old tag"
+      id: old_tag
+      run: |
+        old_tag = git tag --sort=-v:refname --format '%(refname:lstrip=2)' | head -n 1
+        echo '::set-output name=old_tag::$old_tag'
     - name: "✏️ Bump version and push tag"
       id: tagging
       uses: anothrNick/github-tag-action@1.36.0
@@ -17,7 +22,6 @@ jobs:
         WITH_V: true
     - name: "🖨️ Print new tag to console"
       run: |
-        echo ${{steps.tagging.outputs.tag}}
         echo ${{steps.tagging.outputs.new_tag}}
     - name: "Update repo"
       run: |
@@ -27,7 +31,7 @@ jobs:
         npm version --git-tag-version=false ${{steps.tagging.outputs.new_tag}}
     - name: "Bump version Dockerfile"
       run: |
-        sed -i "s/LABEL version=\"${{steps.tagging.outputs.tag}}\"/LABEL version=\"${{steps.tagging.outputs.new_tag}}\"/g" "Dockerfile"
+        sed -i "s/LABEL version=\"${{steps.old_tag.outputs.old_tag}}\"/LABEL version=\"${{steps.tagging.outputs.new_tag}}\"/g" "Dockerfile"
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
