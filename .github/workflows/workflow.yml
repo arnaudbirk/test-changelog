@@ -20,12 +20,9 @@ jobs:
     - name: "Update repo"
       run: |
         git fetch --prune --unshallow
-    - name: "Update Dockerfile"
-      uses: butlerlogic/action-autotag@1.1.1
-      with:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        strategy: docker
-        version: ${{steps.tagging.outputs.new_tag}}
+    - name: "Bump version Package.json"
+      run: |
+        npm version --git-tag-version=false ${{steps.tagging.outputs.new_tag}}
     - name: "✏️ Generate full changelog"
       uses: heinrichreimer/github-changelog-generator-action@v2.3
       with:
